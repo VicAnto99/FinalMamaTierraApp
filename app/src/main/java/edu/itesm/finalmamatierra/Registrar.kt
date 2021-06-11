@@ -58,7 +58,7 @@ class Registrar : AppCompatActivity() {
                         reference.child(id!!).setValue(nUser)
                         bundle.putString("edu_itesm_Mamatierra_main", "added_User")
                         analytics.logEvent("registrar", bundle)
-                        val intento = Intent(this, Principal::class.java)
+                        val intento = Intent(this, MainActivity::class.java)
                         startActivity(intento)
                         Toast.makeText(this, "Usuario creado con éxito!", Toast.LENGTH_LONG).show()
                         bind.nameUser.text.clear()

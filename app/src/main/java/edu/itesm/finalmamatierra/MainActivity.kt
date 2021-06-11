@@ -20,4 +20,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
+    fun infoUser(view: View){
+        val intento = Intent(this, Usuario::class.java)
+        startActivity(intento)
+    }
+    fun logout (view: View){
+        Firebase.auth.signOut()
+        startActivity(Intent(this, Login::class.java))
+        finish()
+    }
+
 }

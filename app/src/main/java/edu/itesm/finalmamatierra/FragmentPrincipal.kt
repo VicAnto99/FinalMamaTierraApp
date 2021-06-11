@@ -19,7 +19,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 import edu.itesm.finalmamatierra.databinding.ActivityRegistrarBinding
 import edu.itesm.finalmamatierra.databinding.FragmentPrincipalBinding
-import kotlinx.android.synthetic.main.activity_principal.*
+import kotlinx.android.synthetic.main.fragment_principal.*
 import java.util.ArrayList
 
 class FragmentPrincipal : Fragment() {
@@ -51,11 +51,12 @@ class FragmentPrincipal : Fragment() {
                 val data = ds.value.toString()
                 array.add(data)
             }
-            nom = array[4].toString()
-            pat = array[5].toString()
+            Log.i("usuario", array.toString())
+            nom = array[5].toString()
+            pat = array[6].toString()
             var espacio = " "
             var nombre = getView()?.findViewById<TextView>(R.id.nombre_principal)
-            nombre?.text = pat + espacio + nom
+            nombre?.text = nom + espacio + pat
         }.addOnFailureListener{
             Log.e("firebase", "Error getting data", it)
         }

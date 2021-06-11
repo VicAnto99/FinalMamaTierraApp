@@ -63,12 +63,13 @@ class Usuario : AppCompatActivity() {
                 val data = ds.value.toString()
                 array.add(data)
             }
+            Log.i("usuario", array.toString())
             con = array[0].toString()
             cor = array[1].toString()
-            fot = array[2].toString()
-            mat = array[3].toString()
-            nom = array[4].toString()
-            pat = array[5].toString()
+            fot = array[3].toString()
+            mat = array[4].toString()
+            nom = array[5].toString()
+            pat = array[6].toString()
             var paterno = findViewById<TextView>(R.id.paterno_ajustes)
             var nombre = findViewById<TextView>(R.id.nombre_ajustes)
             var materno = findViewById<TextView>(R.id.materno_ajustes)
@@ -80,6 +81,7 @@ class Usuario : AppCompatActivity() {
             materno.text = mat
             nombre.text = nom
             paterno.text = pat
+            Log.i("error", nom)
             Glide.with(this)
                 .load(fot)
                 .placeholder(R.drawable.mamatierra1)
@@ -102,6 +104,23 @@ class Usuario : AppCompatActivity() {
             var user = Firebase.auth.currentUser
             var id = user?.uid
 
+            var array = ArrayList<Any>()
+
+            var cur = ""
+
+            reference.child("Users").child(id!!).get().addOnSuccessListener {
+                for (ds in it.getChildren()) {
+                    val data = ds.value.toString()
+                    array.add(data)
+                }
+                Log.i("usuario", array.toString())
+
+                cur = array[2].toString()
+
+            }.addOnFailureListener{
+                Log.e("firebase", "Error getting data", it)
+            }
+
             var paterno = findViewById<TextView>(R.id.paterno_ajustes).text
             var nombre = findViewById<TextView>(R.id.nombre_ajustes).text
             var materno = findViewById<TextView>(R.id.materno_ajustes).text
@@ -122,7 +141,7 @@ class Usuario : AppCompatActivity() {
                             materno.toString(),
                             correo.toString(),
                             contrasena.toString(),
-                            it.toString()
+                            it.toString(),
                         )
                         reference.child("Users").child(id!!).setValue(nUser)
                         Toast.makeText(this, "Foto tomada!", Toast.LENGTH_LONG).show()
@@ -132,7 +151,7 @@ class Usuario : AppCompatActivity() {
                 }
             }
             Toast.makeText(this, "Cambio guardado con éxito!", Toast.LENGTH_LONG).show()
-            val intento = Intent(this, MainActivity::class.java)
+            val intento = Intent(this, Login::class.java)
             startActivity(intento)
         }
     }
