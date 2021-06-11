@@ -42,7 +42,7 @@ class CursosAdapter(private val cursos: List<Cursos>): RecyclerView.Adapter<Curs
                 val id = reference.push().key
                 val comic = Cursos(id.toString(),property.nombre,property.descripcion,property.instructor,property.duracion,property.sesiones,property.actividades,property.foto)
                 reference.child(id!!).setValue(comic)
-                Toast.makeText(renglon.context, "Comic agregado", Toast.LENGTH_LONG).show()
+                Toast.makeText(renglon.context, "Curso agregado", Toast.LENGTH_LONG).show()
             }
         }
     }
