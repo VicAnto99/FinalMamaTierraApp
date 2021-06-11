@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "141107959004",
+    "firebase_url": "https://mama-tierra-final-default-rtdb.firebaseio.com",
+    "project_id": "mama-tierra-final",
+    "storage_bucket": "mama-tierra-final.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141107959004:android:94192ea5ac3f6941ee9019",
+        "android_client_info": {
+          "package_name": "edu.itesm.finalmamatierra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141107959004-rbcdg47kpgaogku62o46pbf9pfmc1p9u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbxEAz7-JZgQHKKW7ydQZH8LN10KUuZzc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141107959004-rbcdg47kpgaogku62o46pbf9pfmc1p9u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
