@@ -39,7 +39,11 @@
         android:id="@+id/fragmentMisCursos"
         android:name="edu.itesm.finalmamatierra.FragmentMisCursos"
         android:label="fragment_mis_cursos"
-        tools:layout="@layout/fragment_mis_cursos" />
+        tools:layout="@layout/fragment_mis_cursos" >
+        <action
+            android:id="@+id/action_fragmentMisCursos_to_fragmentCarrito"
+            app:destination="@id/fragmentCarrito" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentOtrosCursos"
         android:name="edu.itesm.finalmamatierra.FragmentOtrosCursos"
@@ -61,5 +65,14 @@
         <argument
             android:name="curso"
             app:argType="edu.itesm.finalmamatierra.Cursos" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCarrito"
+        android:name="edu.itesm.finalmamatierra.FragmentCarrito"
+        android:label="fragment_carrito"
+        tools:layout="@layout/fragment_carrito" >
+        <argument
+            android:name="CarritoCurso"
+            app:argType="edu.itesm.finalmamatierra.CarritoCursos" />
     </fragment>
 </navigation>
