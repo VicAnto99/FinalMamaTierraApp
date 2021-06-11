@@ -132,7 +132,7 @@ class Usuario : AppCompatActivity() {
                 }
             }
             Toast.makeText(this, "Cambio guardado con éxito!", Toast.LENGTH_LONG).show()
-            val intento = Intent(this, Principal::class.java)
+            val intento = Intent(this, MainActivity::class.java)
             startActivity(intento)
         }
     }

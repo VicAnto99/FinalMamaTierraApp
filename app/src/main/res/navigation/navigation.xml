@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentPrincipal">
+    <fragment
+        android:id="@+id/fragmentPrincipal"
+        android:name="edu.itesm.finalmamatierra.FragmentPrincipal"
+        android:label="FragmentPrincipal" >
+        <action
+            android:id="@+id/action_fragmentPrincipal_to_fragmentExplora"
+            app:destination="@id/fragmentExplora"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_fragmentPrincipal_to_fragmentMisCursos"
+            app:destination="@id/fragmentMisCursos"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_fragmentPrincipal_to_fragmentOtrosCursos"
+            app:destination="@id/fragmentOtrosCursos"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentExplora"
+        android:name="edu.itesm.finalmamatierra.FragmentExplora"
+        android:label="fragment_explora"
+        tools:layout="@layout/fragment_explora" />
+    <fragment
+        android:id="@+id/fragmentMisCursos"
+        android:name="edu.itesm.finalmamatierra.FragmentMisCursos"
+        android:label="fragment_mis_cursos"
+        tools:layout="@layout/fragment_mis_cursos" />
+    <fragment
+        android:id="@+id/fragmentOtrosCursos"
+        android:name="edu.itesm.finalmamatierra.FragmentOtrosCursos"
+        android:label="fragment_otros_cursos"
+        tools:layout="@layout/fragment_otros_cursos" >
+        <action
+            android:id="@+id/action_fragmentOtrosCursos_to_fragmentCurso"
+            app:destination="@id/fragmentCurso"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCurso"
+        android:name="edu.itesm.finalmamatierra.FragmentCurso"
+        android:label="fragment_curso"
+        tools:layout="@layout/fragment_curso" >
+        <argument
+            android:name="curso"
+            app:argType="edu.itesm.finalmamatierra.Cursos" />
+    </fragment>
+</navigation>
