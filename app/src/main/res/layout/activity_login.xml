@@ -9,13 +9,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#24CA2B">
+        android:background="#FDFFFC">
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="168dp"
             android:layout_height="139dp"
-            android:src="@drawable/mamatierra2"
+            android:src="@drawable/mamatierra1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="E-mail"
+            android:hint="Correo"
             android:inputType="textEmailAddress"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -55,7 +55,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="E-mail:"
+            android:text="Correo:"
             app:layout_constraintBottom_toTopOf="@+id/usuario"
             app:layout_constraintStart_toStartOf="@+id/usuario"
             app:layout_constraintTop_toTopOf="parent"
@@ -77,25 +77,26 @@
             android:id="@+id/entra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
             android:text="Entrar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.669" />
+            app:layout_constraintVertical_bias="0.695" />
 
         <Button
             android:id="@+id/registrate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
             android:onClick="regis"
             android:text="Registrate"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.805" />
+            app:layout_constraintVertical_bias="0.811" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
