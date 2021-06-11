@@ -6,97 +6,84 @@
     android:layout_height="match_parent"
     tools:context=".Principal">
 
-    <TextView
-        android:id="@+id/nombre_principal"
-        android:layout_width="wrap_content"
-        android:layout_height="37dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="155dp"
-        android:layout_marginBottom="681dp"
-        android:text="Usuario"
-        android:textColor="@color/greenDos"
-        android:textSize="30sp" />
+    <FrameLayout
+        android:id="@+id/fl_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-7dp">
 
-    <Button
-        android:id="@+id/salir"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="295dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="671dp"
-        android:backgroundTint="#039BE5"
-        android:onClick="logout"
-        android:text="AJUSTES" />
+        <TextView
+            android:id="@+id/nombre_principal"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="155dp"
+            android:layout_marginBottom="681dp"
+            android:backgroundTint="@color/greenDos"
+            android:text="Usuario"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
 
-    <Button
-        android:id="@+id/ajustes"
-        android:layout_width="94dp"
-        android:layout_height="39dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="645dp"
-        android:layout_marginEnd="161dp"
-        android:layout_marginBottom="46dp"
-        android:backgroundTint="#E53935"
-        android:onClick="infoUser"
-        android:text="SALIR" />
+        <Button
+            android:id="@+id/salir"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="305dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="@color/greenDos"
+            android:onClick="logout" />
 
-    <Button
-        android:id="@+id/misCursos"
-        android:layout_width="163dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="201dp"
-        android:layout_marginEnd="118dp"
-        android:layout_marginBottom="469dp"
-        android:backgroundTint="@color/green"
-        android:text="Mis Cursos" />
+        <Button
+            android:id="@+id/ajustes"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="359dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="#D81B60"
+            android:onClick="infoUser" />
 
-    <Button
-        android:id="@+id/otrosCursos"
-        android:layout_width="121dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="147dp"
-        android:layout_marginTop="306dp"
-        android:layout_marginEnd="142dp"
-        android:layout_marginBottom="365dp"
-        android:backgroundTint="@color/green"
-        android:text="Otros Cursos" />
+        <Button
+            android:id="@+id/misCursos"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="@color/green"
+            android:text="Mis Cursos" />
 
-    <Button
-        android:id="@+id/explora"
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="123dp"
-        android:layout_marginTop="416dp"
-        android:layout_marginEnd="118dp"
-        android:layout_marginBottom="254dp"
-        android:backgroundTint="@color/green"
-        android:text="Explora / ML" />
+        <Button
+            android:id="@+id/otrosCursos"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="@color/green"
+            android:text="Otros Cursos" />
+
+        <Button
+            android:id="@+id/explora"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="@color/green"
+            android:text="Explora / ML" />
+
+    </FrameLayout>
 
 </RelativeLayout>
