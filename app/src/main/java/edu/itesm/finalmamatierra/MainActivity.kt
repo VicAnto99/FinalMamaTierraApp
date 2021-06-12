@@ -30,4 +30,8 @@ class MainActivity : AppCompatActivity() {
         finish()
     }
 
+    fun pagos (view: View){
+        val intento = Intent(this, ActivityPagos::class.java)
+        startActivity(intento)
+    }
 }

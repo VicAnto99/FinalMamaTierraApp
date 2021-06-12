@@ -82,7 +82,8 @@
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="25dp"
             android:backgroundTint="@color/green"
-            android:text="Explora / ML" />
+            android:onClick="pagos"
+            android:text="Suscribirse" />
 
     </FrameLayout>
 

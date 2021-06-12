@@ -85,9 +85,6 @@ class FragmentPrincipal : Fragment() {
         otrosCursos.setOnClickListener {
             view?.findNavController()?.navigate(R.id.action_fragmentPrincipal_to_fragmentOtrosCursos)
         }
-        explora.setOnClickListener {
-            view?.findNavController()?.navigate(R.id.action_fragmentPrincipal_to_fragmentExplora)
-        }
     }
 
 }

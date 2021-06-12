@@ -9,13 +9,6 @@
         android:name="edu.itesm.finalmamatierra.FragmentPrincipal"
         android:label="FragmentPrincipal" >
         <action
-            android:id="@+id/action_fragmentPrincipal_to_fragmentExplora"
-            app:destination="@id/fragmentExplora"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out"
-            app:popEnterAnim="@android:anim/slide_in_left"
-            app:popExitAnim="@android:anim/slide_out_right" />
-        <action
             android:id="@+id/action_fragmentPrincipal_to_fragmentMisCursos"
             app:destination="@id/fragmentMisCursos"
             app:enterAnim="@android:anim/fade_in"
@@ -31,18 +24,17 @@
             app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
-        android:id="@+id/fragmentExplora"
-        android:name="edu.itesm.finalmamatierra.FragmentExplora"
-        android:label="fragment_explora"
-        tools:layout="@layout/fragment_explora" />
-    <fragment
         android:id="@+id/fragmentMisCursos"
         android:name="edu.itesm.finalmamatierra.FragmentMisCursos"
         android:label="fragment_mis_cursos"
         tools:layout="@layout/fragment_mis_cursos" >
         <action
             android:id="@+id/action_fragmentMisCursos_to_fragmentCarrito"
-            app:destination="@id/fragmentCarrito" />
+            app:destination="@id/fragmentCarrito"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/fragmentOtrosCursos"
