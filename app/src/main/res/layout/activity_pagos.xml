@@ -9,10 +9,20 @@
     android:padding="2dp"
     tools:context=".ActivityPagos">
 
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="Finalizar Compra:"
+        android:textAlignment="center"
+        android:textColor="#7ECC81"
+        android:textSize="60sp" />
+
     <ImageView
         android:id="@+id/pagar"
-        android:layout_width="411dp"
-        android:layout_height="88dp"
+        android:layout_width="13dp"
+        android:layout_height="140dp"
         android:visibility="gone"
         app:srcCompat="@drawable/pagogoogle" />
 

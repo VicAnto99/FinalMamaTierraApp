@@ -10,7 +10,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="416dp"
         android:layout_height="731dp"
-        android:background="@color/greenUno"
+        android:background="#7ECC81"
         android:orientation="horizontal"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,10 +37,11 @@
                 android:id="@+id/nombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
                 android:text="name"
                 android:textAlignment="center"
-                android:textColor="@color/greenDos"
-                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textSize="34sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -50,7 +51,7 @@
                 android:text="gracia"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="24sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -59,7 +60,8 @@
                 android:layout_height="wrap_content"
                 android:text="info"
                 android:textAlignment="center"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/duracion"
@@ -67,7 +69,8 @@
                 android:layout_height="wrap_content"
                 android:text="info"
                 android:textAlignment="center"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/sesiones"
@@ -75,7 +78,8 @@
                 android:layout_height="wrap_content"
                 android:text="info"
                 android:textAlignment="center"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/actividades"
@@ -83,7 +87,8 @@
                 android:layout_height="wrap_content"
                 android:text="info"
                 android:textAlignment="center"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="24sp" />
 
         </LinearLayout>
 

@@ -12,10 +12,24 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="-7dp">
 
+        <Button
+            android:id="@+id/salir"
+            android:layout_width="110dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="#7ECC81"
+            android:fontFamily="@font/bungee"
+            android:onClick="infoUser"
+            android:text="AJUSTES"
+            app:cornerRadius="20dp" />
+
         <TextView
             android:id="@+id/nombre_principal"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
+            android:layout_width="265dp"
+            android:layout_height="94dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
@@ -25,65 +39,68 @@
             android:layout_marginEnd="155dp"
             android:layout_marginBottom="681dp"
             android:backgroundTint="@color/greenDos"
+            android:fontFamily="@font/bungee"
             android:text="Usuario"
-            android:textColor="@color/black"
+            android:textColor="#7ECC81"
             android:textSize="30sp" />
 
         <Button
-            android:id="@+id/salir"
-            android:layout_width="wrap_content"
-            android:layout_height="26dp"
-            android:layout_marginStart="305dp"
-            android:layout_marginTop="17dp"
-            android:layout_marginEnd="60dp"
-            android:layout_marginBottom="25dp"
-            android:backgroundTint="@color/greenDos"
-            android:onClick="infoUser" />
-
-        <Button
             android:id="@+id/ajustes"
-            android:layout_width="wrap_content"
-            android:layout_height="24dp"
-            android:layout_marginStart="359dp"
-            android:layout_marginTop="17dp"
+            android:layout_width="233dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="500dp"
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="25dp"
-            android:backgroundTint="#D81B60"
-            android:onClick="logout" />
+            android:backgroundTint="#E87D7D"
+            android:fontFamily="@font/bungee"
+            android:onClick="logout"
+            android:text="SALIR"
+            android:textSize="20sp"
+            app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/misCursos"
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="135dp"
+            android:layout_width="235dp"
+            android:layout_height="101dp"
+            android:layout_marginStart="85dp"
             android:layout_marginTop="200dp"
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="25dp"
-            android:backgroundTint="@color/green"
-            android:text="Mis Cursos" />
+            android:backgroundTint="#7ECC81"
+            android:fontFamily="@font/bungee"
+            android:text="Mis Cursos"
+            android:textSize="20sp"
+            app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/otrosCursos"
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="135dp"
+            android:layout_width="235dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="85dp"
             android:layout_marginTop="300dp"
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="25dp"
-            android:backgroundTint="@color/green"
-            android:text="Otros Cursos" />
+            android:backgroundTint="#7ECC81"
+            android:fontFamily="@font/bungee"
+            android:text="Otros Cursos"
+            android:textSize="20sp"
+            app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/explora"
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="135dp"
+            android:layout_width="234dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="85dp"
             android:layout_marginTop="400dp"
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="25dp"
-            android:backgroundTint="@color/green"
+            android:backgroundTint="#7ECC81"
+            android:fontFamily="@font/bungee"
             android:onClick="pagos"
-            android:text="Suscribirse" />
+            android:text="Suscribirse"
+            android:textSize="20sp"
+            app:cornerRadius="20dp" />
 
     </FrameLayout>
 
